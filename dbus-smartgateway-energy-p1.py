@@ -22,7 +22,7 @@ sys.path.insert(1, os.path.join(os.path.dirname(__file__), '/opt/victronenergy/d
 from vedbus import VeDbusService
 
 class DbusHomeWizzardEnergyP1Service:
-    def __init__(self, paths, productname='Hsmartgateway Energy P1', connection='Home Wizzard Energy P1 HTTP JSON service'):
+    def __init__(self, paths, productname='smartgateway Energy P1', connection='Home Wizzard Energy P1 HTTP JSON service'):
         config = self._getConfig()
         deviceinstance = int(config['DEFAULT']['DeviceInstance'])
         customname = config['DEFAULT']['CustomName']
